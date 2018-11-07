@@ -1,0 +1,405 @@
+/*主页CSS样式*/
+/*轮播图样式*/
+
+/*轮播图大屏幕下*/
+@media screen and (min-width: 769px){
+    .my-div-img{
+        width: 100%;
+        height: 450px;
+    }
+}
+/*轮播图中屏幕下*/
+@media screen and (max-width: 768px) {
+    .my-div-img{
+        width: 100%;
+        height: 321px;
+    }
+}
+/*轮播图小屏幕下*/
+@media screen and  (max-width: 375px) {
+    .my-div-img{
+        width: 100%;
+        height: 162px;
+    }
+}
+/*明星资源*/
+#resource{
+    display: flex;
+    justify-content: space-between;
+}
+/*明星资源最大屏幕下*/
+@media screen and (min-width: 1200px) {
+    #start-resource{
+        width: 100%;
+        height: 1174px;
+        padding: 15px 0 15px 0;
+        background: url("../img/header/content_bg.jpg");
+    }
+    #resource{
+        width: 67%;
+        height: 35px;
+        margin: 0 auto;
+        line-height: 35px;
+    }
+    #resource span{
+        border-left: 8px solid #00C4FD;
+        font-size: 22px;
+        color: #181818;
+        padding-left: 8px;
+    }
+    #resource a{
+        font-size: 18px;
+        color: #00aadb;
+        font-weight: normal;
+        text-decoration: none;
+    }
+}
+/*明星资源中等屏幕下*/
+@media screen and (max-width: 960px) {
+    #start-resource{
+        width: 100%;
+        height: 741px;
+        padding: 15px 0 15px 0;
+        background: url("../img/header/content_bg.jpg");
+    }
+    #resource{
+        width: 94%;
+        height: 20px;
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    #resource span{
+        border-left: 4px solid #00C4FD;
+        font-size: 14px;
+        color: #181818;
+        padding-left: 5px;
+    }
+    #resource a{
+        font-size: 18px;
+        color: #00aadb;
+        font-weight: normal;
+        text-decoration: none;
+    }
+}
+/*明星资源小屏幕下*/
+@media screen and (max-width:375px ){
+    #start-resource{
+        width: 100%;
+        height: 748px;
+        padding: 15px 0 15px 0;
+        background: url("../img/header/content_bg.jpg");
+    }
+}
+
+/*明星图片*/
+/*大屏幕下明星资源css样式*/
+@media screen and (min-width: 1200px) {
+    .my-start{
+        width: 66%;
+        margin: 15px auto;
+    }
+    div.my-start div.row div{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 3px;
+        position: relative;
+    }
+    div.my-start div.row div p{
+        width: 90%;
+        height: 40px;
+        opacity: 0;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        left: 0px;
+        bottom: -17px;
+        background: rgba(0,0,0,0.4);
+        transition: 0.3s all ease-in-out;
+    }
+    div.my-start div.row div:hover p{
+        opacity: 1;
+        height: 50px;
+    }
+}
+/*中等屏幕下明星资源CSS*/
+@media screen and (max-width: 960px) {
+    .my-start{
+        width: 90%;
+        margin: 0px auto;
+        height: 270px;
+    }
+    div.my-start div.row div{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2px;
+    }
+    div.my-start div.row div p{
+        display: none;
+        margin: 0;
+    }
+}
+/*小屏幕下明星资源的css样式*/
+@media screen and (max-width: 375px){
+    .my-start{
+        width: 95%;
+        margin: 0 auto;
+        height: 500px;
+    }
+
+    div.my-start div.row div{
+        width: 47.5%;
+    }
+    div.my-start div.row div a img{
+        width: 170px;
+        height: 118px;
+        position: relative;
+        left: 15px;
+        bottom: 0;
+        vertical-align: center;
+    }
+    div.my-start div.row div p{
+        display: none;
+        margin: 0;
+    }
+}
+
+/*业务介绍*/
+/*大屏幕下的业务介绍*/
+@media screen and (min-width: 1200px) {
+    #introduce{
+        width: 67%;
+        height: 35px;
+        margin: 0 auto;
+        line-height: 35px;
+        padding: 20px 0 20px 0;
+    }
+    #introduce span{
+        border-left: 8px solid #00C4FD;
+        font-size: 22px;
+        color: #FFFFFF;
+        padding-left: 8px;
+    }
+}
+/*中等屏幕和小屏幕下的业务介绍*/
+@media screen and (max-width: 960px) and (min-width: 100px) {
+    #introduce{
+        width: 94%;
+        height: 20px;
+        margin: 0 auto;
+        line-height: 20px;
+    }
+    #introduce span{
+        border-left: 4px solid #00C4FD;
+        font-size: 18px;
+        color: #FFFFFF;
+        padding-left: 8px;
+    }
+}
+/*业务介绍大屏幕下的图片*/
+@media screen and (min-width: 1200px) {
+    #introduce img{
+        height: 205px;
+    }
+}
+/*业务介绍中屏幕下的图片*/
+@media screen and (max-width: 960px) {
+    #introduce img{
+        display: block;
+
+        height: 139px;
+    }
+}
+/*业务介绍小屏幕下的图片*/
+@media screen and (max-width: 375px) {
+    #introduce img{
+        height: 63px;
+    }
+}
+
+/*公司动态*/
+.business{
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px 0 20px 0;
+    box-sizing: border-box;
+}
+.my-business{
+    width: 100%;
+    font-size: 20px;
+    color: #181818;
+    padding-left: 10px;
+    display: table;
+    border-left: 8px solid #00c4fd;
+    height: 35px;
+    line-height: 35px;
+}
+.business-introduce{
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.business-one{
+    width: 95%;
+    overflow: hidden;
+    zoom: 1;
+    border-bottom: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    padding: 15px 0px 8px 0px;
+}
+.business-one-a{
+    float: left;
+    width: 23%;
+}
+.img-responsive{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.business-one-div{
+    float: left;
+    width: 57%;
+    overflow: hidden;
+    zoom: 1;
+    box-sizing: border-box;
+    padding: 15px 0px 0px 20px;
+}
+.business-one-div a{
+    width: 80%;
+    display: block;
+    line-height: 26px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 15px;
+    color: #6d6d6d;
+    text-overflow: ellipsis;
+}
+.Blue{
+    color: #313131;
+    font-size: 16px;
+}
+.business-one-p{
+    float: right;
+    width: 20%;
+    text-align: right;
+    font-size: 12px;
+    color: #818181;
+}
+.business-right{
+    float: right !important;
+}
+.business-one:hover{
+    background-color: #eeeeee;
+}
+.business-one:hover .Blue{
+    color: #01a0ce;
+    text-decoration: none;
+}
+/*中等屏幕下公司动态的样式*/
+@media screen and (max-width: 960px){
+    .business-right{
+        display: none;
+    }
+    .business{
+        height: 334px !important;
+    }
+    .business-one{
+        width: 200%;
+    }
+    .business-one{
+        overflow: hidden;
+        zoom: 1;
+        border-bottom: 1px solid #d8d8d8;
+        box-sizing: border-box;
+        padding: 15px 0 8px 0;
+    }
+    a.Blue{
+        color: #01a0ce;
+    }
+}
+/*小屏幕下公司动态样式*/
+@media screen and (max-width: 375px) {
+    .business-one{
+        width: 100%;
+    }
+    .business-right{
+        display: none;
+    }
+}
+
+
+/*媒体合作*/
+.media{
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    box-sizing: border-box;
+    padding: 12px 0px 32px 0px;
+    margin-top: 10px;
+}
+.container{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.media-title{
+    width: 100%;
+    font-size: 20px;
+    color: #181818;
+    padding-left: 10px;
+    display: table;
+    border-left: 8px solid #00c4fd;
+    height: 35px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.my-media{
+    margin-right: -1px;
+    margin-left: -1px;
+}
+.Media{
+    width: 99%;
+    text-align: center;
+    overflow: hidden;
+    zoom: 1;
+}
+.Media a{
+    display: inline-block; margin: 0 70px 20px 70px;
+}
+.Media a img{
+    border: 1px solid #dddddd;
+    vertical-align: middle;
+}
+.Media a img:hover{
+    border: 1px solid #adcceb;
+}
+/*小屏幕下媒体合作图片*/
+@media screen and (max-width: 375px){
+    .container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .media-title{
+        width: 100%;
+        font-size: 14px;
+        color: #181818;
+        padding-left: 5px;
+        display: table;
+        border-left: 4px solid #00c4fd;
+        height: 20px;
+        line-height: 20px;
+    }
+    .Media{
+        width: 100%;
+        overflow: hidden;
+        zoom: 1;
+    }
+    .Media a{
+        display: inline-block;
+        margin: 0 5px 20px 0;
+    }
+    .Media a img{
+        border: 1px solid #dddddd;
+        vertical-align: middle;
+    }
+}
+

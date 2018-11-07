@@ -1,0 +1,149 @@
+/*工作邀约下的CSS样式*/
+.WorkOffer{
+    width: 100%;
+    padding-top: 58px;
+    padding-bottom: 60px;
+}
+.from-title{
+    font-size: 28.43px;
+    color: #fff;
+    width: 268px;
+    height: 97px;
+    text-align: center;
+    line-height: 104px;
+    background: url(../img/introduce/workoffer_bg.png) no-repeat center top;
+    margin: 0 auto;
+}
+.WorkOffer .formain{
+    border: 1px solid #646d84;
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 32px 40px 60px 40px;
+}
+.WorkOffer .formain .form-group{
+    width: 100%;
+    overflow: hidden;
+    zoom: 1;
+    margin-bottom: 10px;
+}
+.WorkOffer .formain .form-group .control-label{
+    color: #242424;
+    font-size: 14px;
+    white-space: nowrap;
+    font-weight: normal;
+    width: 28%;
+    float: left;
+    line-height: 32px;
+    text-align: right;
+}
+.WorkOffer .formain .form-group .from-control{
+    width: 65%;
+    float: left;
+    border: none;
+    border-bottom: 1px solid #838383;
+    box-shadow: none;
+    border-radius: 0px;
+    color: #242424;
+    outline:none;
+    cursor: text;
+}
+.WorkOffer .formain .form-group textarea{
+    background: #F2F2F2;
+}
+.Refer{
+    width: 80%;
+    margin: 0 auto;
+}
+.submit{
+    float: right;
+    background-color: #00aadb;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 12px 35px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.Offer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 110px 0px;
+    text-align: center;
+    color: #242424;
+}
+.Offer h6{
+    font-size: 18px;
+    font-weight: bold;
+}
+.Offer p{
+    font-size: 16px;
+}
+.WorkOffer form .formainB{
+    padding: 32px 40px 12px 40px;
+}
+.WorkOffer .formain .form-group .form-controlB{
+    height: 205px;
+}
+/*中等屏幕表单内容*/
+@media screen and (max-width: 960px) {
+    .WorkOffer .Refer .submit {
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .WorkOffer{
+        padding-top: 28px;
+    }
+    .WorkOffer .formain{
+        width: 100%;
+        padding: 32px 10px 30px 10px;
+    }
+    .Offer{
+        padding: 30px 0px;
+    }
+    .from-title{
+        width: 120px;
+        height: 43px;
+        border-radius: 40px;
+        background: url(../img/introduce/workoffer_bg.png) no-repeat center top;
+        font-size: 18px;
+        line-height: 46px;
+    }
+}
+/*小屏幕下表单内容*/
+@media screen and (max-width: 375px){
+    .WorkOffer{
+        padding-top: 28px;
+    }
+    .WorkOffer .formain{
+        width: 100%;
+        padding: 32px 10px 30px 10px;
+    }
+    .WorkOffer .Refer .submit {
+        float: none;
+        margin: 0 auto;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .from-title{
+        width: 120px;
+        height: 43px;
+        border-radius: 40px;
+        background: url(../img/introduce/workoffer_bg.png) no-repeat center top;
+        font-size: 18px;
+        line-height: 46px;
+    }
+    .Offer{
+        padding: 30px 0px;
+    }
+    .WorkOffer .formain .form-group textarea{
+        width: 100%;
+    }
+    div.form-group textarea{
+        height: 150px;
+    }
+}

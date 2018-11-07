@@ -1,0 +1,44 @@
+/*页面底部内容*/
+.footer{
+    width: 100%;
+    background-color: #1f222a;
+    box-sizing: border-box;
+    padding: 30px 0px 10px 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #cfcfcf;
+}
+.footer .row{
+    margin-left: 24%;
+}
+.footer .row a{
+    display: inline-block;
+    font-size: 20px;
+    width: 23%;
+    padding-bottom: 45px;
+    color: #dcdcdc;
+    font-weight: bold;
+}
+.footer-last a{
+    color: #ababab;
+}
+.footer a:hover {
+    color: #00c6ff;
+}
+/*中等屏幕下 页面底部CSS样式*/
+@media screen and (max-width: 960px) {
+    .footer .row{
+        margin-left: 18%;
+    }
+}
+/*小屏幕下 页面底部CSS样式*/
+@media screen and  (max-width: 375px){
+    .footer .row a{
+        font-size: 14px;
+        width: 28%;
+        padding-bottom: 25px;
+    }
+    .footer .row{
+        margin-left: 8%;
+    }
+}
